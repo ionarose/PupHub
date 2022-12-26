@@ -1,4 +1,4 @@
-import Pet from "./Pets";
+import Pet from "./Pet";
 
 const Results = ({ pets }) => {
   return (

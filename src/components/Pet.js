@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-
 const Pet = (props) => {
   const { name, animal, breed, images, location, id } = props;
 
@@ -18,8 +17,7 @@ const Pet = (props) => {
         <h1>{name}</h1>
         <h2>{`${animal} — ${breed} — ${location}`}</h2>
       </div>
-      
-</Link>
+    </Link>
   );
 };
 
