@@ -5,7 +5,7 @@ import { useState } from "react";
 import AdoptedPetContext from "./hooks/AdoptedPetContext";
 import  Details  from "./components/Details";
 import SearchParams from "./components/SearchParams";
-import PupHub from "./PupHub.png"
+import PupHub from "./PupHubb.png"
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {

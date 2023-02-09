@@ -100,9 +100,9 @@ header > a,
   
 }
 .logo {
-padding: 0px;
+padding: 10px;
 float: left;
-  width:20vw;
+  width:10vw;
 }
 .pet h2 {
   white-space: nowrap;
