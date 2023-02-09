@@ -5,7 +5,7 @@ import { useState } from "react";
 import AdoptedPetContext from "./hooks/AdoptedPetContext";
 import  Details  from "./components/Details";
 import SearchParams from "./components/SearchParams";
-
+import PupHub from "./PupHub.png"
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -23,7 +23,8 @@ export default function App(){
         <AdoptedPetContext.Provider value={adoptedPet}>
           <QueryClientProvider client={queryClient}>
             <header>
-              <Link to="/">Adopt Me!</Link>
+              <Link to="/">
+              <img src={PupHub} alt="puphub logo" className="logo"/></Link>
             </header>
             <Routes>
               <Route path="/details/:id" element={<Details />} />

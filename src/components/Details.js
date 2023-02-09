@@ -36,7 +36,7 @@ const Details = () => {
         {showModal ? (
           <Modal>
             <div>
-              <h1>Would you like to adopt {pet.name}?</h1>
+              <h1>Add {pet.name} to your fellowship?</h1>
               <div className="buttons">
                 <button
                   onClick={() => {
