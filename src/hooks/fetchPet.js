@@ -1,10 +1,12 @@
 const fetchPet = async ({ queryKey }) => {
     const id = queryKey[1];
 
-    const apiRes = await fetch(`https://api.petfinder.com/v2/animals?id=${id}`, {
+    const apiRes = await fetch(`https://api.petfinder.com/v2/animals`, {
       method: "GET",
      
-      headers: { Authentication: process.env.BEARER },
+      headers: {     "Authorization": process.env.BEARER,
+      "Accept": "application/json",
+      "Content-Type": "application/json" },
     });
     
   //unsuccessful request = error (needed for react query)

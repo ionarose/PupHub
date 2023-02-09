@@ -5,10 +5,12 @@ async function fetchBreedList({ queryKey }) {
   
  
   
-    const res = await fetch(`https://api.petfinder.com/v2/animals?type=${animal}`, {
+    const res = await fetch(`https://api.petfinder.com/v2/animals`, {
       method: "GET",
    
-      headers: { Authentication: process.env.BEARER }});
+      headers: {     "Authorization": process.env.BEARER,
+      "Accept": "application/json",
+      "Content-Type": "application/json" }});
 
     if (!res.ok) {
       throw new Error(`breeds ${animal} fetch not ok`);
