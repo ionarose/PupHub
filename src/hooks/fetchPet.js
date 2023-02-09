@@ -3,7 +3,7 @@ const fetchPet = async ({ queryKey }) => {
 
     const apiRes = await fetch(`https://api.petfinder.com/v2/animals?id=${id}`, {
       method: "GET",
-      mode: "CORS",
+     
       headers: { Authentication: process.env.BEARER },
     });
     

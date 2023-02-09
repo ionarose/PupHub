@@ -5,9 +5,9 @@ async function fetchBreedList({ queryKey }) {
   
  
   
-    const res = await fetch(`https://api.petfinder.com/v2/animals?animal=${animal}`, {
+    const res = await fetch(`https://api.petfinder.com/v2/animals?type=${animal}`, {
       method: "GET",
-      mode: "CORS",
+   
       headers: { Authentication: process.env.BEARER }});
 
     if (!res.ok) {
